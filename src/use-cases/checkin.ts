@@ -13,7 +13,7 @@ interface CheckInUseCaseResponse {
 }
 
 export class CheckInUseCase {
-  constructor(private usersRepository: UsersRepository) {}
+  constructor() {}
 
   async execute({
     email,
