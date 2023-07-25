@@ -16,10 +16,10 @@ export class CheckInUseCase {
   constructor() {}
 
   async execute({
-    email,
-    password,
+    userId,
+    gymId,
   }: CheckInUseCaseRequest): Promise<CheckInUseCaseResponse> {
-    const user = await this.usersRepository.findByEmail(email)
+    /* const user = await this.usersRepository.findByEmail(email)
     if (!user) {
       throw new InvalidCredentialsError()
     }
@@ -27,10 +27,7 @@ export class CheckInUseCase {
     const doesPassordMatches = await compare(password, user.password_hash)
     if (!doesPassordMatches) {
       throw new InvalidCredentialsError()
-    }
-
-    return {
-      user,
-    }
+    } */
+    return null
   }
 }
