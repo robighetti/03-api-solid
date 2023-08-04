@@ -2,14 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug TypeScript Node.js",
       "type": "node",
       "request": "launch",
+      "name": "Debug TypeScript",
       "runtimeArgs": ["-r", "ts-node/register"],
-      "args": ["${workspaceFolder}/src/app.ts"], // Altere o caminho conforme necessário
-      "cwd": "${workspaceFolder}",      
-      "sourceMaps": true,
-      "skipFiles": ["<node_internals>/**"],
+      "args": ["${workspaceFolder}/src/server.ts"],
       "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
   ]
